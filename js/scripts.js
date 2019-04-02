@@ -8,10 +8,12 @@ $(document).ready(function() {
   var faveFive = $("input#favoriteThing5").val();
 
   var faveThings = [faveOne, faveTwo, faveThree, faveFour, faveFive];
-  faveThings.forEach(function(faveThing) {
-  $(".newFaveThings").append("<li>" + faveThing + "</li>");
-  });
-
+  // faveThings.forEach(function(faveThing) {
+  //
+  // });
+  for (var i = 0; i <= 4; i ++){
+    $(".newFaveThings").append("<li>" + faveThings[i] + "</li>");
+  }
 
 
   });
